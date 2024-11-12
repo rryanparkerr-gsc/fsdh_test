@@ -3,5 +3,6 @@
 !*.py
 !*.md
 !Dockerfile
+!docker_compose.yaml
 !entry_point.sh
 !requirements.txt
