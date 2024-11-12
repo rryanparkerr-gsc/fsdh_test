@@ -2,3 +2,6 @@
 !*.gitignore
 !*.py
 !*.md
+!Dockerfile
+!entry_point.sh
+!requirements.txt
