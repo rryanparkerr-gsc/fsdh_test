@@ -9,8 +9,8 @@ Created: 2023-06-20
 from sqlalchemy.orm import Session
 import datetime as dt
 
-from . import schemas
-from . import models
+from app import schemas
+from app import models
 
 
 def get_weather_station_by_installation_uid(db: Session, installation_uid: int):

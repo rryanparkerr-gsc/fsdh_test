@@ -9,8 +9,8 @@ Created: 2023-11-01
 from sqlalchemy.orm import Session
 import datetime as dt
 
-from . import schemas
-from . import models
+from app import schemas
+from app import models
 
 
 def get_ag_logger_data_by_logger_uid_channel_number_and_measurement_date(logger_uid: int, channel_number: int,

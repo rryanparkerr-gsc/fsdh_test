@@ -11,10 +11,10 @@ from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 import datetime as dt
 
-import schemas
-import crud
+from app import schemas
+from app import crud
 from .api import app, get_db, check_tz_aware
-import output_data_structures.output_schemas as ods_schemas
+from app.output_data_structures import output_schemas as ods_schemas
 
 
 @app.post("/thaw_tube_bead_colour_years/", response_model=schemas.ThawTubeBeadColourYear)

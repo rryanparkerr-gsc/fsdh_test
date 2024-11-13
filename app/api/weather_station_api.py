@@ -2,8 +2,8 @@ from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 import datetime as dt
 
-import schemas
-import crud
+from app import schemas
+from app import crud
 from .api import app, get_db, check_tz_aware
 
 

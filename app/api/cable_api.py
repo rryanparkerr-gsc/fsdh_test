@@ -13,11 +13,11 @@ import numpy as np
 import pandas as pd
 import asyncio
 
-import schemas
-import crud
+from app import schemas
+from app import crud
 from .api import app, get_db, check_tz_aware
-import output_data_structures.data_structures as ods
-import output_data_structures.output_schemas as ods_schemas
+from app.output_data_structures import data_structures as ods
+from app.output_data_structures import output_schemas as ods_schemas
 
 connector_types = ["seacon", "impulse", "16 pin", "bendix", "24 pin", "unknown"]
 sensor_types = ["YSI44033", "YSI44032", "fenwall", "aitkins", "unknown"]

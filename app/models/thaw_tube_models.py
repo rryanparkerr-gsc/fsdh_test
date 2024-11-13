@@ -10,7 +10,7 @@ from sqlalchemy import Column, ForeignKey
 from sqlalchemy.sql import sqltypes
 from sqlalchemy.orm import relationship
 
-from database import Base
+from app.database import Base
 
 
 class ThawTube(Base):

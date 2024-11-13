@@ -13,10 +13,10 @@ import numpy as np
 import datetime as dt
 import pandas as pd
 
-import schemas
-import crud
+from app import schemas
+from app import crud
 from .api import app, get_db, check_tz_aware
-import output_data_structures.output_schemas as ods_schemas
+from app.output_data_structures import output_schemas as ods_schemas
 
 logger_type_list = ["RBR - seacon", "RBR - impulse", "RBR - bendix", "HOBO U22", "HOBO U23", "Vemco",
                     "Campbell Sci. CR300", "RBR - unknown", "HOBO - unknown"]

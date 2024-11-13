@@ -9,7 +9,7 @@ Created: 2023-11-03
 
 import datetime as dt
 
-from schemas.base_model import BaseModelConfig
+from app.schemas.base_model import BaseModelConfig
 
 
 class CableLoggerDataOutput(BaseModelConfig):

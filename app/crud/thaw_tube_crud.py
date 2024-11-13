@@ -9,8 +9,8 @@ Created: 2023-06-28
 from sqlalchemy.orm import Session, aliased
 import datetime as dt
 
-from . import schemas
-from . import models
+from app import schemas
+from app import models
 
 
 def add_thaw_tube_bead_colour_year(db: Session, bead_colour_year: schemas.ThawTubeBeadColourYearBase):

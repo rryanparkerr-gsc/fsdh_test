@@ -10,11 +10,11 @@ from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 import pandas as pd
 
-import schemas
-import crud
+from app import schemas
+from app import crud
 from .api import app, get_db, check_tz_aware
-import output_data_structures.data_structures as ods
-import output_data_structures.output_schemas as ods_schemas
+from app.output_data_structures import data_structures as ods
+from app.output_data_structures import output_schemas as ods_schemas
 
 
 @app.post("/air_ground_logger_data/", response_model=schemas.AirGroundTemperatureData)

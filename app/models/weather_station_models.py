@@ -9,7 +9,7 @@ Created: 2023-07-07
 from sqlalchemy import Column, ForeignKey
 from sqlalchemy.sql import sqltypes
 
-from database import Base
+from app.database import Base
 
 
 class WeatherStation(Base):
