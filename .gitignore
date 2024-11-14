@@ -6,4 +6,6 @@
 !docker_compose.yaml
 !entry_point.sh
 !requirements.txt
-!.github/workflow/build_app.yaml
+!.github/workflows/**
+
+
