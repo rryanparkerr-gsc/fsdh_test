@@ -1,4 +1,4 @@
-name: Build and Push Dash App Image to FDSH
+name: Build and Push API app Image to FDSH
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build_and_push:
     runs-on: ubuntu-latest
 
     steps:
