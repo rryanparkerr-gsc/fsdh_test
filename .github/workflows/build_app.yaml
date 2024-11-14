@@ -2,9 +2,8 @@ name: Build and Push API app Image to FDSH
 
 on:
   push:
-    branches:
-      - master
-#    workflow_dispatch:
+    branches: '**'
+  workflow_dispatch:
 
 jobs:
   build:
