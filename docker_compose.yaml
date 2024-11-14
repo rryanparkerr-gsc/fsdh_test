@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     build: .
-    image: ghcr.io/rryanparkerr-gsc/pfdb-api-test:latest
+    image: ghcr.io/rryanparkerr-gsc/fsdh_test:latest
     container: pfdb-api
     ports:
       - "8080:8080"
