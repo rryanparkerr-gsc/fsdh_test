@@ -6,8 +6,8 @@ services:
     container: pfdb-api
     ports:
       - "8080:8080"
+    command: /bin/bash entry-point.sh
 
-#     command: /bin/bash entry-point.sh
 #     volumes:
 #       - my_code:/code
 #     depends_on:
