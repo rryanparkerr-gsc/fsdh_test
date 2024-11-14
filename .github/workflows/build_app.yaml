@@ -23,12 +23,18 @@ jobs:
       - name: Login to GitHub Container Registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: ghcr.io/rryanparkerr-gsc/fsdh_test:latest
+      - name: Build and push image
+        run: |
+          docker build . --tag ghcr.io/rryanparkerr-gsc/fsdh_test:latest
+          docker run ghcr.io/rryanparkerr-gsc/fsdh_test:latest
+          docker push ghcr.io/rryanparkerr-gsc/fsdh_test:latest
+
+#      - name: Build and push Docker image
+#        uses: docker/build-push-action@v4
+#        with:
+#          context: .
+#          push: true
+#          tags: ghcr.io/rryanparkerr-gsc/fsdh_test:latest
 
       - name: Logout of GitHub Container Registry
         run: docker logout ghcr.io
