@@ -3,7 +3,7 @@ services:
   web:
     build: .
     image: ghcr.io/rryanparkerr-gsc/fsdh_test:latest
-    container: pfdb-api
+    container: container_name
     ports:
       - "8080:8080"
     command: /bin/bash entry-point.sh
