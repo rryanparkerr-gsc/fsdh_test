@@ -1,4 +1,4 @@
-name: Build and Push Dash App Image to GHCR
+name: Build and Push Dash App Image to FDSH
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: rryanparkerr-gsc/pfdb-api-test:latest
+          tags: ghcr.io/rryanparkerr-gsc/pfdb-api-test:latest
 
       - name: Logout of GitHub Container Registry
-        run: docker logout rryanparkerr-gsc
+        run: docker logout ghcr.io
