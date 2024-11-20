@@ -1,11 +1,14 @@
+
 *.*
 !*.gitignore
 !*.py
 !*.md
+!*.yaml
 !Dockerfile
 !docker_compose.yaml
 !entry_point.sh
 !requirements.txt
-!.github/workflows/**
+!.github*
+
 
 
